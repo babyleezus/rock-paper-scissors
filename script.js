@@ -1,6 +1,6 @@
-let choices = ["rock", "paper", "scissors"]
+//let choices = ["rock", "paper", "scissors"]
 
-userChoice =
+/*userChoice =
 
 computerChoice = r,p,s
 
@@ -11,4 +11,4 @@ console log(0)
 
 if userChoice = r and computerChoice = s 
 console.log ("You lose! User 0, Computer 1")
-if userChoice = p 
+if userChoice */

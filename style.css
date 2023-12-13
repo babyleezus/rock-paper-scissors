@@ -1,0 +1,20 @@
+body {
+    background-color: #dfd7c6
+;
+align-items: center;
+    
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: #668a84;
+    width: 500px;
+    max-width: 75%;
+    height: 500px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+
+}
