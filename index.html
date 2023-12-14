@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <title>Rock Paper Scissors</title>
 </head>
 <body>
     <div class="container">
-        <div class="user-choice">
-            <h2>Your choice</h2>
-                <button><i class="fa-thin fa-hand-back-fist"></i></button>
-                <button><i class="fa-thin fa-hand"></i></button>
-                <button><i class="fa-thin fa-hand-scissors fa-rotate-90"></i></button>
+        <div class="user">
+            <h2 id="user-choice">Your choice: </h2>
+                <button class="choice-button" id="Rock">Rock</button>
+                <button class="choice-button" id="Paper">Paper</button>
+                <button class="choice-button" id="Scissors">Scissors</button>
         </div>
-        <div class="computer-choice">
-            <h2>Computer 
-        choice</h2>
+        <div class="computer">
+            <h2 id="computer-choice">Computer 
+        choice: </h2>
         </div>
         <div class="result-display">
+            <h2>Result: </h2>
             <button>Play!</button>
             <button>Play again!</button>
         </div>
     </div>
-   <script src="script.js"></script> 
+<script src="script.js" defer></script> 
 </body>
 </html>

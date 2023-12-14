@@ -1,13 +1,33 @@
-let rockPaperScissors = document.querySelectorAll("button")
-let userChoice = document.getElementsByClassName("user-choice")
-let computersChoice = document.getElementsByClassName("computer-choice")
-let results = document.getElementsByClassName("result-display")
+const choiceButtons = document.querySelectorAll(".choice-button")
+// let rock = document.getElementById("rock")
+// let paper = document.getElementById("paper")
+// let scissors = document.getElementById("scissors")
+let declareUserChoice = document.getElementById('user-choice')
+const declareComputerChoice = document.querySelector('.computer-choice')
+const declareResult = document.querySelector('.result-display')
+let userChoice;
+let computerChoice;
+let result;
+
+
+choiceButtons.forEach(button => button.addEventListener("click", (e) => {
+    userChoice = e.target.id;
+    declareUserChoice.innerHTML = "Your choice: " + userChoice
+    computerChooses()
+}))
+
+    function computerChooses(){
+        
+    }
+
+
+
 
 
 
 //let choices = ["rock", "paper", "scissors"]
 
-/*userChoice =
+/*userChoice =""
 
 computerChoice = r,p,s
 

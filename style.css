@@ -37,6 +37,7 @@ body {
     box-shadow: inset;
 }
 
+
 .result-display {
     grid-column: 2;
     grid-row: 1;
@@ -52,5 +53,5 @@ body {
     width: 80px;
     border-radius: 20px;
     box-shadow: inset;
-}
+} 
 
