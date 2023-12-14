@@ -1,3 +1,10 @@
+let rockPaperScissors = document.querySelectorAll("button")
+let userChoice = document.getElementsByClassName("user-choice")
+let computersChoice = document.getElementsByClassName("computer-choice")
+let results = document.getElementsByClassName("result-display")
+
+
+
 //let choices = ["rock", "paper", "scissors"]
 
 /*userChoice =

@@ -1,12 +1,14 @@
 body {
-    background-color: #dfd7c6
-;
-align-items: center;
-    
+    background-color: #dfd7c6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #dfd7c6;
+    font-size: medium;
 }
 
 .container {
     display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
     justify-content: center;
     background-color: #668a84;
@@ -16,5 +18,39 @@ align-items: center;
     margin: auto;
     padding: 10px;
     text-align: center;
-
+    border-radius: 20px;
 }
+
+.user-choice .computer-choice {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.user-choice button {
+    background-color: #7d7875;
+    color: #dfd7c6;
+    border: none;
+    font-family: inherit;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    box-shadow: inset;
+}
+
+.result-display {
+    grid-column: 2;
+    grid-row: 1;
+    
+    
+}
+.result-display button {
+    background-color: #7d7875;
+    color: #dfd7c6;
+    border: none;
+    font-family: inherit;
+    height: 40px;
+    width: 80px;
+    border-radius: 20px;
+    box-shadow: inset;
+}
+
