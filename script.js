@@ -5,9 +5,12 @@ const choiceButtons = document.querySelectorAll(".choice-button")
 const declareUserChoice = document.getElementById('user-choice')
 const declareComputerChoice = document.getElementById('computer-choice')
 const declareResult = document.getElementById('result')
+const clearButton = document.getElementById('clear-button')
 let userChoice;
 let computerChoice;
 let result;
+let userScore = 0;
+let computerScore = 0;
 
 
 choiceButtons.forEach(button => button.addEventListener("click", (e) => {
@@ -15,7 +18,10 @@ choiceButtons.forEach(button => button.addEventListener("click", (e) => {
     declareUserChoice.innerHTML = "Your choice: " + userChoice
     computerChooses()
     getResult ()
+    scoreboard ()
 }))
+
+
 
     function computerChooses(){
         const randNum = Math.floor(Math.random() * 3) + 1
@@ -50,6 +56,15 @@ choiceButtons.forEach(button => button.addEventListener("click", (e) => {
 
         declareResult.innerHTML = "Result: " + result
     }
+
+    function scoreboard (){
+        if (result = "You win!"){
+            userScore.innerHTML = "User score: " + userScore + 1;
+
+        } else (result = "You lose!")
+            computerScore.innerHTML = "Computer score: " + computerScore + 1;
+    }
+
 
 
 
