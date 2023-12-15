@@ -2,9 +2,9 @@ const choiceButtons = document.querySelectorAll(".choice-button")
 // let rock = document.getElementById("rock")
 // let paper = document.getElementById("paper")
 // let scissors = document.getElementById("scissors")
-let declareUserChoice = document.getElementById('user-choice')
-const declareComputerChoice = document.querySelector('.computer-choice')
-const declareResult = document.querySelector('.result-display')
+const declareUserChoice = document.getElementById('user-choice')
+const declareComputerChoice = document.getElementById('computer-choice')
+const declareResult = document.getElementById('result')
 let userChoice;
 let computerChoice;
 let result;
@@ -14,10 +14,41 @@ choiceButtons.forEach(button => button.addEventListener("click", (e) => {
     userChoice = e.target.id;
     declareUserChoice.innerHTML = "Your choice: " + userChoice
     computerChooses()
+    getResult ()
 }))
 
     function computerChooses(){
-        
+        const randNum = Math.floor(Math.random() * 3) + 1
+        if (randNum === 1) {
+            computerChoice = "Rock"
+        } 
+        else if (randNum === 2) {
+            computerChoice = "Paper"
+        }
+        else {
+            computerChoice = "Scissors"
+        }
+        declareComputerChoice.innerHTML = "Computer choice: " + computerChoice
+    }
+
+    function getResult (){
+        if (computerChoice === userChoice){
+            result = "It's a tie!"
+        } else if (computerChoice === "Rock" && userChoice === "Paper"){
+            result = "You win!"
+        } else if (computerChoice === "Rock" && userChoice === "Scissors"){
+            result = "You lose!"
+        } else if (computerChoice === "Scissors" && userChoice === "Rock"){
+            result = "You win!"
+        } else if (computerChoice === "Scissors" && userChoice === "Paper"){
+            result = "You lose!"
+        } else if (computerChoice === "Paper" && userChoice === "Scissors"){
+            result = "You win!"
+        } else if (computerChoice === "Paper" && userChoice === "Rock"){
+            result = "You lose!"
+        }
+
+        declareResult.innerHTML = "Result: " + result
     }
 
 
